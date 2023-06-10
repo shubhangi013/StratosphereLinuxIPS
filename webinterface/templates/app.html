@@ -15,7 +15,7 @@
 
 
 <body>
-  <div class="container-fluid">
+  <div>
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
 
@@ -43,7 +43,7 @@
 
       </div>
     </div>
-    <ul class="nav nav-tabs me-auto bg-light" id="slips_custom_navbar">
+    <!-- <ul class="nav nav-tabs me-auto bg-light" id="slips_custom_navbar">
       <li class="nav-item">
         <a type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarToggleExternalContent"
           aria-controls="navbarToggleExternalContent" aria-expanded="false"
@@ -52,25 +52,7 @@
           SLIPS
       </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" type="button" id="nav-hotkeys-tab" data-bs-toggle="tab" data-bs-target="#nav-hotkeys" role="tab"
-          aria-controls="nav-hotkeys" aria-selected="true">
-          Analysis
-          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" type="button" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" role="tab"
-          aria-controls="nav-general" aria-selected="false">                   
-          General
-          <!-- <i class="fa-solid fa-circle-info"></i>  -->
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" type="button" id="nav-documentation-tab" target=”_blank” href="https://stratospherelinuxips.readthedocs.io/en/develop/" aria-selected="false">
-          Documentation
-        </a>
-      </li>
+
       <li class="nav-item ms-auto">
         <a type="button" id="changedb_button" class="nav-link btn-primary" data-toggle="modal" data-target="#modal_choose_redis" style=" color: #0d6efd!important">
           <i class="fa-solid fa-database"></i>
@@ -82,8 +64,80 @@
           <i class="fa fa-refresh" aria-hidden="true"></i>
         </a>
       </li>
-    </ul>
+    </ul> -->
 
+<!--trial-->
+<!-- <nav class="navbar navbar-expand-custom navbar-mainbg">
+  <a class="navbar-brand navbar-logo"type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+  aria-controls="navbarToggleExternalContent" aria-expanded="false" >SLIPS</a>
+  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fas fa-bars text-white"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+          <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+          <li class="nav-item">
+              <a class="nav-link active" type="button" id="nav-hotkeys-tab" data-bs-toggle="tab" data-bs-target="#nav-hotkeys" role="tab"
+              aria-controls="nav-hotkeys" aria-selected="true"><i class="fas fa-tachometer-alt"></i>Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" type="button" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" role="tab"
+              aria-controls="nav-general" aria-selected="false">
+              <i class="fa-solid fa-circle-info"></i>
+              General
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://stratospherelinuxips.readthedocs.io/en/develop/"><i class="far fa-copy"></i>Documentation</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a type="button" id="changedb_button" class="nav-link btn-primary" data-toggle="modal" data-target="#modal_choose_redis" style=" color: #0d6efd!important">
+              <i class="fa-solid fa-database"></i>
+              Change DB
+            </a>
+          </li>
+      </ul>
+  </div>
+</nav> -->
+<!--trial-->
+
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+
+  <a class="navbar-brand navbar-logo" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+  aria-controls="navbarToggleExternalContent" aria-expanded="false">SLIPS</a>
+  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fas fa-bars text-white"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav me-auto" id="slips_custom_navbar">
+          <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+          <li class="nav-item">
+              <a class="nav-link active" type="button" id="nav-hotkeys-tab" data-bs-toggle="tab" data-bs-target="#nav-hotkeys" role="tab"
+              aria-controls="nav-hotkeys" aria-selected="true"><i class="fas fa-tachometer-alt"></i>Analysis</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" type="button" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" role="tab"
+              aria-controls="nav-general" aria-selected="false">
+              <i class="far fa-clone"></i>General</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" type="button" id="nav-documentation-tab" data-bs-toggle="tab" data-bs-target="#nav-documentation" role="tab"
+            aria-controls="nav-documentation" aria-selected="false">
+            <i class="far fa-clone"></i>Documentation</a>
+        </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="https://stratospherelinuxips.readthedocs.io/en/develop/"><i class="far fa-copy"></i>Documents</a>
+          </li> -->
+          <li class="nav-item">
+            <a type="button" id="changedb_button" class="nav-link" data-toggle="modal" data-target="#modal_choose_redis">
+              <i class="fa-solid fa-database"></i>
+              Change DB
+            </a>
+          </li>
+      </ul>
+  </div>
+</nav>
 
 
     <div class="tab-content" id="nav-tabContent">
@@ -92,6 +146,9 @@
       </div>
       <div class="tab-pane fade" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">
         {% include 'general.html' %}
+      </div>
+      <div class="tab-pane fade" id="nav-documentation" role="tabpanel" aria-labelledby="nav-documentation-tab">
+        {% include 'documentation.html' %}
       </div>
     </div>
     <div class="modal " id="modal_choose_redis" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel">
